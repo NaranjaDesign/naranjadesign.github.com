@@ -1,0 +1,316 @@
+*{
+	font-family: arial, sans-serif;
+	color: black;
+	
+}
+
+@font-face {
+    font-family: "menufooterfont";
+    src: url(Liberation.ttf);
+}
+
+
+body{
+	background-color:#666666;
+}
+
+header{
+	height:105px;
+	margin-bottom:10px;
+}
+
+footer{
+	padding:10px;
+	margin: 10px auto;
+	width:900px;
+}
+
+footer p{
+	font-size:12px;
+	color:white;
+	margin:5px;
+}
+
+h1{
+	font-family:georgia, times new roman;
+	font-size:20px;
+	background-color: #EDC189;
+	color:white;
+	position:relative;
+	left:-30px;
+	width:244px;
+	text-shadow: 2px 2px 2px #7F5D36;  
+	box-shadow: 3px 3px 0px #7F5D36;
+	padding:5px;
+	padding-left:30px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#h1principal{
+	font-size:22px;
+	color:black;
+	background-color:transparent;
+	font-family: arial, sans-serif;
+	padding:0px;
+	margin:0px;
+	left:0px;
+	text-shadow:none;
+	box-shadow:none;
+	position:static;
+}
+
+h2{
+	font-size:18px;
+	
+	border-bottom:solid red 1px;
+}
+
+
+h3, h3 a:link, h3 a:visited{
+	font-size:16px;
+	text-decoration:none;
+	color:#0066FF;
+	margin-top:0px;
+}
+
+h3 a:hover{
+	text-decoration:underline;
+}
+
+p{
+	font-size:13px;
+
+}
+
+canvas{
+	background-color:black;
+}
+
+#container{
+ 	width:900px;
+	background-color:white;
+	border-radius: 10px;
+	padding:10px;
+ 	margin: auto;
+}
+
+#logo{
+	float:left;
+}
+
+#infocontacto{
+	width:450px;
+	height:60px;
+	float:right;
+}
+
+#infocontacto p{
+	font-size:12px;
+	font-family:arial, sans-serif;
+	margin:3px;
+}
+
+#menu{
+	background-color:black;
+	border: solid black 1px;
+	box-shadow: 2px 2px 0px black;
+	height:30px;
+	margin-top:10px;
+	float:right;
+}
+
+#menu ul ul{
+	position:absolute;
+	display:none;
+	list-style:none;
+	font-size:12px;
+}
+
+#menu ul li:hover > ul{
+	display:block;
+}
+
+#menu ul li ul{
+	position:relative;
+	width:145px;
+}
+
+#menu ul{
+	font-family: Arial, sans-serif;
+	font-size:16px;
+	list-style: none;
+	margin-top:0px;
+	padding-left:0px;
+	text-align:center;
+}
+
+#menu li{
+	float: left;
+}
+
+#menu li a:link, a:visited{
+	background-color:silver;
+	display:block;
+	width:145px;
+	height:25px;
+	text-decoration:none;
+	text-shadow: 2px 2px 0px #666666;
+	margin-right:1px;
+	margin-left:1px;
+	padding-top:5px;
+	color:white;
+	font-weight:bold;
+
+}
+#menu li a:hover{
+	background-color:#DC1D00;
+	color:white;
+}
+
+
+#slideshow{
+	height: 335px;
+	width:590px;
+	border:1px solid #DC1D00;
+	box-shadow: 2px 2px 0px #DC1D00;
+}
+
+#slideinfo{
+	padding:5px;
+}
+
+#slideinfo h3{
+	margin:0px;
+}
+
+#intro{
+	float: right;
+	padding:10px;
+	width:275px;
+	height: 315px;
+	border:1px solid #DC1D00;
+	box-shadow: 2px 2px 0px #DC1D00;
+}
+
+#novedades{
+	height:380px;
+	width:920px;
+}
+
+
+
+.imgleft{
+	float:left;
+	overflow: auto;
+	margin-right:10px;
+}
+
+.main{
+	
+}
+
+.container2{
+	padding-top:30px;
+}
+.leftmenu{
+	float:left;
+	clear:both;
+	margin-right:10px;
+}
+
+.leftmenu ul{
+	list-style:none;
+	margin:0px;
+	padding-left:0px;
+}
+
+.leftmenu ul li a:link, .leftmenu ul li a:visited{
+	display: block;
+	width:227px;
+	text-decoration:none;
+	padding:10px;
+	border:solid #7F5D36 1px;
+	background-color:#664734;
+	box-shadow: 3px 3px 0px #7F5D36;
+}
+
+.leftmenu ul li a:hover{
+	background-color:black;
+}
+
+.h3a{
+	color:red;
+}
+
+.nov{
+	background-color:#F3F3F3;
+	border: solid black 1px;
+	box-shadow: 2px 2px 0px black;
+	width:423px;
+	height:140px;
+	padding:10px;
+	margin-right:10px;
+	margin-top:10px;
+	float:left;
+}
+
+.vmas, .vmas a:link, .vmas a:visited{
+	text-align:right;
+	text-decoration:none;
+	color:red;
+}
+
+.vmas  a:hover{
+	text-decoration:underline;
+}
+#menufooter{
+	border-top:solid 1px white;
+	border-bottom:solid 1px white;
+	margin-top:10px;
+	margin-bottom:10px;
+	height:35px;
+}
+
+#menufooter ul{
+	margin-top:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:0px;
+	list-style:none;
+}
+
+#menufooter li{
+	float:left;
+	padding-right:20px;
+}
+
+#menufooter li a, a:visited{
+	color:white;
+	font-family:"menufooterfont", arial, sans-serif;
+	text-decoration:none;
+	font-size:20px;
+}
+
+#menufooter li a:hover{
+	text-decoration:underline;
+}
+
+#creditos{
+	padding:10px;
+}
+
+#creditos p{
+	font-size:12px;
+	margin:0px;
+}
+
+#cempresa{
+	width:500px;
+
+}
+
+#cpagina{
+	width:350px;
+	float:right;
+}
