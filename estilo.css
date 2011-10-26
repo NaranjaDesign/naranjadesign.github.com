@@ -62,7 +62,8 @@ h1{
 
 h2{
 	font-size:18px;
-	
+	clear:both;
+	padding-top:30px;
 	border-bottom:solid red 1px;
 }
 
@@ -79,9 +80,10 @@ h3 a:hover{
 }
 
 p{
+	text-align:justify;
 	font-size:13px;
-
 }
+
 
 canvas{
 	background-color:black;
@@ -194,28 +196,38 @@ canvas{
 }
 
 #novedades{
-	height:380px;
 	width:920px;
+	height:350px;
 }
 
 
 
 .imgleft{
 	float:left;
-	overflow: auto;
 	margin-right:10px;
 }
 
+.imgright{
+	float:right;
+	margin-left:10px;
+}
+
 .main{
-	
+	padding-bottom:20px;
 }
 
 .container2{
-	padding-top:30px;
+
 }
+
+.containerRight{
+	position: relative;
+	width:625px;
+	left:267px;
+}
+
 .leftmenu{
-	float:left;
-	clear:both;
+	position:absolute;
 	margin-right:10px;
 }
 
@@ -226,6 +238,7 @@ canvas{
 }
 
 .leftmenu ul li a:link, .leftmenu ul li a:visited{
+	color:white;
 	display: block;
 	width:227px;
 	text-decoration:none;
@@ -253,6 +266,7 @@ canvas{
 	margin-right:10px;
 	margin-top:10px;
 	float:left;
+	
 }
 
 .vmas, .vmas a:link, .vmas a:visited{
