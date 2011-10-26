@@ -11,7 +11,7 @@
 
 
 body{
-	background-color:#666666;
+	background-color:#CC9966;
 }
 
 header{
@@ -92,6 +92,7 @@ canvas{
 #container{
  	width:900px;
 	background-color:white;
+	box-shadow:0px 0px 6px black;
 	border-radius: 10px;
 	padding:10px;
  	margin: auto;
@@ -151,13 +152,13 @@ canvas{
 	float: left;
 }
 
-#menu li a:link, a:visited{
+#menu li a:link, #menu li a:visited{
 	background-color:silver;
 	display:block;
 	width:145px;
 	height:25px;
 	text-decoration:none;
-	text-shadow: 2px 2px 0px #666666;
+	text-shadow: 2px 2px 2px #666666;
 	margin-right:1px;
 	margin-left:1px;
 	padding-top:5px;
@@ -174,8 +175,6 @@ canvas{
 #slideshow{
 	height: 335px;
 	width:590px;
-	border:1px solid #DC1D00;
-	box-shadow: 2px 2px 0px #DC1D00;
 }
 
 #slideinfo{
@@ -191,15 +190,18 @@ canvas{
 	padding:10px;
 	width:275px;
 	height: 315px;
-	border:1px solid #DC1D00;
-	box-shadow: 2px 2px 0px #DC1D00;
 }
 
 #novedades{
 	width:920px;
-	height:350px;
+	height:330px;
 }
 
+
+.boxeffect1{
+	border:1px solid black;
+	box-shadow: 2px 2px 0px black;
+}
 
 
 .imgleft{
@@ -258,8 +260,6 @@ canvas{
 
 .nov{
 	background-color:#F3F3F3;
-	border: solid black 1px;
-	box-shadow: 2px 2px 0px black;
 	width:423px;
 	height:140px;
 	padding:10px;
@@ -299,7 +299,7 @@ canvas{
 	padding-right:20px;
 }
 
-#menufooter li a, a:visited{
+#menufooter li a, #menufooter li a:visited{
 	color:white;
 	font-family:"menufooterfont", arial, sans-serif;
 	text-decoration:none;
