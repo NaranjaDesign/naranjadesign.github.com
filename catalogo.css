@@ -1,0 +1,82 @@
+
+.balanzCont{
+	width:620px;		
+}	
+.maquinaCont{
+	width:620px;
+}
+.marco{
+	height: 190px;
+	width:620px;
+	border:1px solid #DC1D00;
+	box-shadow: 2px 2px 0px #DC1D00;
+	margin-bottom:18px;
+}
+
+.pic{
+	
+	height: 140px;
+	width: 200px;
+	margin-left:10px;
+	margin-top: 35px;
+	padding:0px;
+	border:1px solid #0066FF;
+	box-shadow: 2px 2px 0px #0066FF;
+}
+
+.verCom{
+	position:absolute;
+	left:800px;
+	padding-top:30px;
+	font-size:12px;
+}
+
+.verComMaq{
+	float: right;
+	margin-right: 2px;
+	margin-top: -33px;
+	font-size:12px;
+}
+
+.nombre{
+	margin-left:8px;
+	margin-top: 5px;
+	float:left;
+	text-decoration:underline;
+}
+
+.imgEx{
+	margin-top: -5px;
+	float:left;
+}
+
+
+
+.description{
+
+  text-align:justify;
+  width:300px;
+  float:right;
+  padding-top:27px;
+  padding-right:40px;
+  }
+ 
+ .leftmenu ul li ul li a:link, .leftmenu ul li ul li a:visited{
+	display: block;
+	width:202px;
+	text-decoration:none;
+	color: white;
+	padding-left:35px;
+	border:solid #7F5D36 1px;
+	background-color:#CC9966;
+	box-shadow: 3px 3px 0px #7F5D36;
+}
+
+.leftmenu ul li ul li a:hover{
+	background-color:black;
+}
+
+.num{
+	padding-left: 580px;
+	
+}
