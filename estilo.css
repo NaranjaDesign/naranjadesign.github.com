@@ -11,7 +11,11 @@
 
 
 body{
-	background-color:#CC9966;
+	background-color:#585858;
+	background-image:url('images/fondo.jpg');
+	background-position:center top;
+	background-repeat:repeat;
+	background: linear-gradient(top, black, white);
 }
 
 header{
@@ -92,7 +96,7 @@ canvas{
 #container{
  	width:900px;
 	background-color:white;
-	box-shadow:0px 0px 6px black;
+	box-shadow:0px 0px 10px black;
 	border-radius: 10px;
 	padding:10px;
  	margin: auto;
@@ -103,23 +107,16 @@ canvas{
 }
 
 #infocontacto{
-	width:450px;
-	height:60px;
-	float:right;
+	margin-bottom:20px;
 }
 
-#infocontacto p{
-	font-size:12px;
-	font-family:arial, sans-serif;
-	margin:3px;
-}
 
 #menu{
 	background-color:black;
 	border: solid black 1px;
 	box-shadow: 2px 2px 0px black;
 	height:30px;
-	margin-top:10px;
+	margin-top:55px;
 	float:right;
 }
 
@@ -311,12 +308,12 @@ canvas{
 }
 
 #creditos{
-	padding:10px;
+
 }
 
 #creditos p{
 	font-size:12px;
-	margin:0px;
+
 }
 
 #cempresa{
@@ -325,6 +322,6 @@ canvas{
 }
 
 #cpagina{
-	width:350px;
+	width:100px;
 	float:right;
 }
