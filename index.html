@@ -18,7 +18,19 @@
  	<meta name="robots" content="all, follow, index">
  	<meta name="copyright" content="NARANJA DESIGN 2011">
  	<meta name="generator" content="NotePad++">
- 
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+	<script src="jqFancyTransitions.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function(){
+			$.getJSON("novedades.json", function(data){ 
+					$.each(data, function(i, data){
+						var nove="<div class=\"nov boxeffect1\"> <img class=\"imgleft imgnovedad\" src=\""+data.imagen_pequena+"\" alt=\"Foto de muestra\"/><h3><a href=\""+data.vinculo+"\">"+data.titulo+"</a></h3><p>"+data.descripcion+"<p><p class=\"vmas\"><a href=\""+data.vinculo+"\">Ver m&aacutes detalles</a></p></div></h2>";
+						$(nove).appendTo("#novedades");
+					});
+				
+			});
+	});
+	</script>
 </head>
 
 <body>
@@ -55,47 +67,28 @@
 		</div>
 		
 		<div class="main">
-			<div id="slideshow" class="boxeffect1">
-				<canvas id="myCanvas" width="590px" height="250px"></canvas>
-				<div id="slideinfo">
-					<h3><a href="index.html">Entérese de cómo se fundó Balanzas Levis</a></h3>
-					<p>Entérese en la sección "Quienes Somos"</p>
-				</div>
+			<div id="slideshowHolder" class="boxeffect1">
+				<img src="images/novedades/quienes_somos_big.jpg" alt="<div id='slideinfo'><h3>Balanzas Levis, todo lo que necesita saber de nosotros</h3> <p>Entérese cómo se fundó Balanzas Levis y cuales son nuestros objetivos.</p></div>" /><a href="quienes_somos.html"></a>
+				<img src="images/novedades/balanzas_big.jpg" alt="<div id='slideinfo'><h3>Descubra nuestro cat&aacutelogo de balanzas</h3><p>Contamos con un amplio catálogo de balanzas mecánicas y electrónicas de diversas marcas que prometen maximizar la ventaja competitiva de su empresa.</p></div>" /><a href="balanzas.html"></a>
+				<img src="images/novedades/contactenos_big.jpg" alt="<div id='slideinfo'><h3>Comun&iacutequese con nosotros</h3><p>¿Tiene alguna duda o consulta? No dude en comunicarse con nosotros.</p></div>" /><a href="contactenos.html"></a>
+				<img src="images/novedades/accesorios_big.jpg" alt="<div id='slideinfo'><h3>Repuestos y accesorios</h3><p>&iquestEn busca de repuestos y accesorios para sus balanzas o máquinas de raspadillas&#63 Encúentrelo en nuestro catálogo de repuestos y accesorios.</p></div>" /><a href="accesorios_repuestos.html"></a>
 			</div>
-		
+			
+			<script>
+				$('#slideshowHolder').jqFancyTransitions({ 
+					width: 590, 
+					height: 335 ,
+					delay:6000,
+					navigation:false,
+					effect: 'wave',
+					links: true
+				});
+			</script>
 		
 			<div id="novedades">
-					<div class="nov boxeffect1">
-						<img class="imgleft" src="images/foto_de_muestra_novedades.jpg" alt="Foto de muestra"/>
-						<h3><a href="index.html">Titulo</a></h3>
-						<p>Morbi ultricies, lectus a vulputate venenatis, sem est vulputate metus<p>
-						<p class="vmas"><a href="#">Ver m&aacutes detalles</a></p>
-					</div>
-				
-					<div class="nov boxeffect1">
-						<img class="imgleft" src="images/foto_de_muestra_novedades.jpg" alt="Foto de muestra"/>
-						<h3><a href="index.html">Titulo</a></h3>
-						<p>Morbi ultricies, lectus a vulputate venenatis, sem est vulputate metus</p>
-						<p class="vmas"><a href="#">Ver m&aacutes detalles</a></p>
-					</div>
-				
-					<div class="nov boxeffect1">
-						<img class="imgleft" src="images/foto_de_muestra_novedades.jpg" alt="Foto de muestra"/>
-						<h3><a href="index.html">Titulo</a></h3>
-						<p>Morbi ultricies, lectus a vulputate venenatis, sem est vulputate metus</p>
-						<p class="vmas"><a href="#">Ver m&aacutes detalles</a></p>
-					</div>
-				
-					<div class="nov boxeffect1">
-						<img class="imgleft" src="images/foto_de_muestra_novedades.jpg" alt="Foto de muestra"/>
-						<h3><a href="index.html">Titulo</a></h3>
-						<p>Morbi ultricies, lectus a vulputate venenatis, sem est vulputate metus</p>
-						<p class="vmas"><a href="#">Ver m&aacutes detalles</a></p>
-					</div>
 			</div>
 		</div>
 	</div>
-	
 	<footer>
 		<div id="menufooter">
 			<ul>

@@ -1,7 +1,7 @@
 *{
 	font-family: arial, sans-serif;
 	color: black;
-	
+
 }
 
 @font-face {
@@ -89,9 +89,6 @@ p{
 }
 
 
-canvas{
-	background-color:black;
-}
 
 #container{
  	width:900px;
@@ -169,17 +166,19 @@ canvas{
 }
 
 
-#slideshow{
-	height: 335px;
-	width:590px;
-}
-
 #slideinfo{
 	padding:5px;
+	height:70px;
+	width:580px;
+	border-top:solid white 1px;
 }
 
 #slideinfo h3{
-	margin:0px;
+	color: white;
+}
+
+#slideinfo p{
+	color:white;
 }
 
 #intro{
@@ -263,7 +262,7 @@ canvas{
 	margin-right:10px;
 	margin-top:10px;
 	float:left;
-	
+
 }
 
 .vmas, .vmas a:link, .vmas a:visited{

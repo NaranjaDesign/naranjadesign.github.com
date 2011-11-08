@@ -1,0 +1,30 @@
+[
+	{
+		"titulo":"Balanzas Levis, todo lo que necesita saber de nosotros",
+		"descripcion":"Entérese cómo se fundó Balanzas Levis y cuales son nuestros objetivos.",
+		"vinculo":"quienes_somos.html",
+		"imagen_grande":"images/novedades/quienes_somos_big.jpg",
+		"imagen_pequena":"images/novedades/quienes_somos_small.jpg"
+	},
+	{
+		"titulo":"Descubra nuestro cat&aacutelogo de balanzas",
+		"descripcion":"Contamos con un amplio catálogo de balanzas mecánicas y electrónicas de diversas marcas que prometen maximizar la ventaja competitiva de su empresa.",
+		"vinculo":"balanzas.html",
+		"imagen_grande":"images/novedades/balanzas_big.jpg",
+		"imagen_pequena":"images/novedades/balanzas_small.jpg"
+	},
+	{
+		"titulo":"Comun&iacutequese con nosotros",
+		"descripcion":"¿Tiene alguna duda o consulta? No dude en comunicarse con nosotros.",
+		"vinculo":"contactenos.html",
+		"imagen_grande":"images/novedades/contactenos_big.jpg",
+		"imagen_pequena":"images/novedades/contactenos_small.jpg"
+	},
+	{
+		"titulo":"Repuestos y accesorios",
+		"descripcion":"&iquestEn busca de repuestos y accesorios para sus balanzas o máquinas de raspadillas&#63 Encúentrelo en nuestro catálogo de repuestos y accesorios.",
+		"vinculo":"repuestos_accesorios.html",
+		"imagen_grande":"images/novedades/accesorios_big.jpg",
+		"imagen_pequena":"images/novedades/accesorios_small.jpg"
+	}
+]
