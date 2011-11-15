@@ -1,13 +1,37 @@
+#menu{
+	margin-top:50px;
+}
 
+#menufooter{
+	text-align: center auto;
+}
+
+.verCom{
+	float: right;
+	margin-right: 22px;
+	margin-top: -34px;
+	font-size:12px;
+}
+
+.containerCat{
+	margin-top:15px;
+	padding-left:270px;
+	width:620px;
+}
 .balanzCont{
-	width:620px;		
+	width:620px;
+	margin-top: 15px;
+	padding-top:10px;
 }	
+
+
 .maquinaCont{
 	width:620px;
 }
 .marco{
-	height: 190px;
-	width:620px;
+	height: 180px;
+	width:530px;
+	margin-left:100px;
 	border:1px solid #DC1D00;
 	box-shadow: 2px 2px 0px #DC1D00;
 	margin-bottom:18px;
@@ -17,19 +41,15 @@
 	
 	height: 140px;
 	width: 200px;
-	margin-left:10px;
-	margin-top: 35px;
-	padding:0px;
+	margin-left:-100px;
+	margin-top: 15px;
+	
 	border:1px solid #0066FF;
 	box-shadow: 2px 2px 0px #0066FF;
+	
+	
 }
 
-.verCom{
-	position:absolute;
-	left:800px;
-	padding-top:30px;
-	font-size:12px;
-}
 
 .verComMaq{
 	float: right;
@@ -38,15 +58,22 @@
 	font-size:12px;
 }
 
+.verComRep{
+	float: right;
+	margin-right: 2px;
+	margin-top: -33px;
+	font-size:12px;
+}
+
 .nombre{
-	margin-left:8px;
-	margin-top: 5px;
+	margin-left:165px;
+	margin-top: 25px;
 	float:left;
 	text-decoration:underline;
 }
 
 .imgEx{
-	margin-top: -5px;
+	margin-top: -45px;
 	float:left;
 }
 
@@ -57,10 +84,14 @@
   text-align:justify;
   width:300px;
   float:right;
-  padding-top:27px;
-  padding-right:40px;
+  margin-top:0px;
+  margin-right:40px;
+  font-weight:bold;
   }
  
+ .leftmenu{
+	display: block;
+ }
  .leftmenu ul li ul li a:link, .leftmenu ul li ul li a:visited{
 	display: block;
 	width:202px;
