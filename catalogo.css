@@ -27,7 +27,14 @@
 
 .maquinaCont{
 	width:620px;
+	margin-top: 15px;
+	padding-top:10px;
 }
+
+.repCont{
+	margin-top: 15px;
+	padding-top:10px;
+	}
 .marco{
 	height: 180px;
 	width:530px;
