@@ -1,97 +1,55 @@
-#container{
-	height: 700px;
-}
-
-.container2{
-	width: 606px;
-	float:left;
-}
-
-#formulario{
-	padding-left: 35px;
-	font-size: 15px;
-	text-align : left;
-}
-
-.der{
-	font-size: 16px;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	padding-left: 35px;
-	text-align : left;
-}
-
-
-.fila{
-	padding-right: 10px;
-}
-
-.opc{
-	font-size: 14px;
-	padding-left: 20px;
-	text-align : left;
-}
-#mapGoo{
-	float: right;
-	margin-left: 5px;
-	padding-top:20px;
-	padding-right: 20px;
-	font-size:15px;
-	width: 250px;
-	height: 300px;
-}
-
-#formulario span{
-	margin-right: 59px;
-}
-
-.radio{
-	margin-left: 206px;
-}
-
-.ingreso{
-	font-weight:hbld;
-	height:20 px;
-	width: 340px;
-	font-size : 18 px;
-	border : gray solid 2px;
-}
-
-#table1{
-	margin-bottom: 30px;
-}
-#table2{
-	margin-top: 30px;
-}
-#table2 td{
-	vertical-align: top;
-}
-#mensaje{
-	margin-left: 140px;
-	font-weight:hbld;
-	height: 140px;
-	width: 250px;
-}
-
-	
-.boton{
-	margin-top: 10px;
-	margin-left: 210px;
-	margin-right: -200px;
-	background-color : black;
-	color:white;
-}
-#mapa{
-	height: 220px;
-	width: 250px;
-	border: solid red 2px;
-}
-
-#map{
-	display:block;
-	width:250px;
-	height:220px;
-	margin:0 auto;
-	-webkit-box-shadow: 0px 5px 20px #ccc;
-	
-}
+#container{height: 780px;}
+.container2{width: 606px;float:left;}
+#der{font-weight: bold;font-size: 16px;margin-top: 30px;margin-bottom: 20px;padding-left: 35px;text-align : left;}
+#formulario{padding-left: 35px;font-size: 15px;text-align : left;}
+.form-list{padding:3px;border:1px solid #CCC;-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2) inset;-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2) inset;box-shadow:0 1px 1px rgba(0, 0, 0, 0.2) inset}
+.form-list option{padding:2px}
+.form-list option:nth-child(2n+1){background:#f5f5f5}
+.form-radio{vertical-align:middle;margin:0px;padding:0px}
+.form-radio-item{margin-top:5px;float:left;clear:left;}
+.form-multiple-column,.form-single-column{display:inline-block}
+.form-multiple-column .form-radio-item, .form-multiple-column .form-checkbox-item{width:150px}
+.form-radio-item label {margin-left:5px}
+.form-radio-item br{clear:left}
+.form-submit-button,.form-submit-reset {margin:0px;overflow:visible;padding:1px 6px;width:auto}
+.form-submit-button::-moz-focus-inner,.form-submit-reset::-moz-focus-inner{border:0px;padding:1px 6px}
+.form-label-top{margin-bottom:6px;display:inline-block;white-space:normal}
+.form-input-wide{}.form-section,.form-section-closed{list-style:none;list-style-position:outside;margin:0px;padding:0px;position:relative;zoom:1}
+.form-section-closed{overflow:hidden;height:60px}
+.form-input{display:inline-block}
+.form-line-column{float:left;clear:none;width:auto;white-space:nowrap}
+.form-line-column-clear{clear:left;width:auto}
+.form-line-active{background-color:#FFFFE0;color:#333}
+.form-required{margin-left:5px;color:red}
+.form-button-error{color:red;display:inline}
+.form-line-error{background:#FAA;color:#333}
+.form-validation-error{border:1px solid red;-moz-box-shadow:0 0 2px red;-webkit-box-shadow:0 0 2px red;box-shadow:0 0 2px red}
+.form-validation-error.form-input{border:none}
+.form-line-active .form-error-message{display:none}
+.form-error-message{z-index:900;position:absolute;max-width:130px;right:0px;top:0px;color:#333;padding:3px;font-size:10px;border:4px solid #d88;-webkit-box-shadow:0px 2px 4px rgba(102, 102, 102, 0.5);-webkit-border-radius:6px 6px;-moz-box-shadow:0px 2px 4px rgba(102, 102, 102, 0.5);-moz-border-radius:6px 6px;box-shadow:0px 2px 4px rgba(102, 102, 102, 0.5);border-radius:6px 6px;background:#FCC}
+.form-error-arrow{position:absolute;top:-20px;left:10px;height:0px;width:0px;border:10px solid transparent;border-bottom-color:#666;border-bottom:10px solid rgba(102,102,102,0.3)}
+.form-error-arrow-inner{position:absolute;top:1px;height:0px;width:0px;border:10px solid transparent;border-bottom-color:#FCC;border-bottom-width:11px;left:-10px;top:-10px}
+.form-input .form-error-message, .form-input-wide .form-error-message{bottom:-5px;font-size:11px;position:relative;z-index:900;right:auto;top:auto;color:#333;padding:3px;max-width:100%;padding-bottom:3px;font-size:12px;border:none;-moz-box-shadow:0px 2px 4px rgba(102, 102, 102, 0.5);-webkit-box-shadow:0px 2px 4px rgba(102, 102, 102, 0.5);-moz-border-radius:6px 6px;-webkit-border-radius:6px 6px;box-shadow:0px 2px 4px rgba(102, 102, 102, 0.5);border-radius:6px 6px;background:#FCC}
+.form-description-indicator{display:none;height:100%;position:absolute;right:0;top:0;width:25px;background:url(/images/s-info.png) no-repeat center}
+.right .form-description-arrow{border-color:transparent transparent transparent #CCC;left:auto;right:-24px}
+.right .form-description-arrow-small{border-color:transparent  transparent transparent #F5F5F5;left:auto;right:-14px}
+.form-sub-label-container{display:inline-block;margin-right:5px;white-space:nowrap}
+.form-sub-label{color:#999;display:block;font-size:9px}
+.form-html{padding:3px;white-space:normal}
+.form-radio-other-input{margin-left:5px}
+.form-spinner-input-td{white-space:normal}
+.form-spinner-input-td input[type="number"]::-webkit-inner-spin-button,
+.form-spinner-input-td input[type="number"]::-webkit-outer-spin-button{display:none}
+.edit-hover{display:none}
+.form-single-column .clearfix{display:inline-block}
+.form-single-column .clearfix{display:block}
+#form-buttons-wrapper{margin-left:263px;}
+#input_6{ /* Cuadro de mensaje */width: 285px;font-weight:hbld;height: 140px;font-size: 14px !important;}
+.form-label{margin-bottom:6px;display:inline-block;white-space:normal;width:257px !important;}
+.form-label-left{  /*ingreso*/float:left;display:inline-block;text-align:left;padding:3px;white-space:normal;width:240px !important;}
+.form-line{clear:both;padding:10px;margin:0px;display:inline-block;width:97%;width:-moz-available;position:relative;}
+.form-label-right{float:left;display:inline-block;text-align:right;margin-right:6px;margin-bottom:6px;padding:3px;white-space:normal;width:257px !important;}
+.form-all{list-style:none;list-style-position:outside;margin:0px auto;padding-top:20px;width:580px;color:Black !important;font-family:Verdana;font-size:12px;}
+#input_4, #input_7, #input_8{width: 285px;}
+#mapGoo{float: right;margin-left: 5px;padding-top:20px;padding-right: 20px;font-size:15px;width: 250px;height: 300px;}
+#map{display:block;width:250px;height:220px;margin:0 auto;-webkit-box-shadow: 0px 5px 20px #ccc;}
