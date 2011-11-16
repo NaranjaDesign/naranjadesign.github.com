@@ -19,51 +19,11 @@
  	<meta name="robots" content="all, follow, index">
  	<meta name="copyright" content="NARANJA DESIGN 2011">
  	<meta name="generator" content="NotePad++">
-	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
 	<script type="text/javascript" src="Gmaps.js"></script>
-	
-	<script type="text/javascript">
-		var map;
-		$(document).ready(function(){
-			map=new GMaps({
-				div: '#map',
-				lat: -12.05993,
-				lng: -76.994583
-			});
-			map.addMarker({
-				lat: -12.05993,
-				lng: -76.994583,
-				title: 'Edificio de Balanzas Levis'
-						
-			
-			});
-			
-			
-			map.setContextMenu({
-				control:'map',
-				options:[{
-					title:'Add Marker',
-					name:'add_marker',
-					action: function(e){
-						this.addMarker({
-						lat: e.latLng.lat(),
-						lng: e.latLng.lng(),
-						title: 'New Marker'
-						});
-					this.hideContextMenu();
-					}
-				},{
-					title:'Centre here',
-					name:'center_here',
-					action: function(e){
-						this.setCentre(e.latLng.lat(),e.latLng.lng());
-					}
-				}]
-			});
-		});
-	</script>
+	<script type="text/javascript" src="mapa.js"></script>
 </head>
 
 <body>
@@ -80,6 +40,7 @@
 						<ul>
 							<li><a href="balanzas.html">Balanzas</a></li>
 							<li><a href="maquinas_de_raspadilla.html">M&aacutequinas de raspadilla</a></li>
+							<li><a href="repuestos_y_accesorios.html">Repuestos y Accesorios</a></li>
 						</ul>
 					</li>
 					<li><a href="quienes_somos.html">Quienes Somos</a>
@@ -97,29 +58,60 @@
 
 			<div class="container2">
 				
-				<h4 class="der">Estimado cliente, el presente formulario es para acoger cualquier duda acerca de la empresa y sus diversas funcionalidades.</h4>
+				<p id="der">Estimado cliente, el presente formulario es para acoger cualquier duda acerca de la empresa y sus diversas funcionalidades.</p>
 			
 				<div id="formulario">
-					<form method= "post" action="proceso.php" name ="saludo">
-						
-						<table id="table1">
-						<tr><td class="fila">Nombres y Apellidos:</td><td><input class="ingreso" type ="text" id="texto" name="nombre"/></TD></TR>
-						<tr><td class="fila">E-mail:</td><td><input class="ingreso" type="text" id="texto" name="e-mail" /></TD></TR>
-						<tr><td class="fila">Teléfono o Celular (opcional):</td><td><input class="ingreso" type ="text" id="texto" name="telefono"/></TD></TR>
-						</table></br>
 					
-						<span class="fila">Motivo de Contacto: </span>
-				
-						<input type="radio" id="r1" value="consulta" name="ingreso" /><label class="opc" for="r1">Consulta de Compra</label><br/>
-						<input class="radio" type="radio" id="r2" value="reclamo" name="ingreso" /><label class="opc" for="r2">Reclamo</label><br/>
-						<input class="radio" type="radio" id="r3" value="info" name="ingreso" /><label class="opc" for="r3">Información</label><br/>
-						<input class="radio" type="radio" id="r3" value="otro" name="ingreso" /><label class="opc" for="r3">Otro</label><br/>
-						<table id="table2">
-						<tr><td><label for="mensaje">Mensaje:</label></td><td><textarea name="mensaje" id="mensaje" ></textarea></td><br />
-						</table>
-						<input type="submit" name="enviar" class="boton" value="Enviar" />
-						<input type="reset" name="limpiar" class="boton" value="Limpiar" />
-
+					<form class="jotform-form" action="http://submit.jotform.com/submit.php" method="post" name="form_13161948293" id="13161948293" accept-charset="utf-8">
+					<input type="hidden" name="formID" value="13161948293" />
+					<div class="form-all">
+					<ul class="form-section">
+					  <li class="form-line" id="id_8">
+						<label class="form-label-left" id="label_8" for="input_8"> Nombres y Apellidos: </label>
+						<div id="cid_8" class="form-input" >
+						  <input type="text" class="form-textbox validate[required, Alphabetic]" id="input_8" name="q8_nombresY" />
+						</div>
+					  </li>
+					  <li class="form-line" id="id_4">
+						<label class="form-label-left" id="label_4" for="input_4"> E-mail: </label>
+						<div id="cid_4" class="form-input">
+						  <input type="email" class="form-textbox validate[required, Email]" id="input_4" name="q4_email4" />
+						</div>
+					  </li>
+					  <li class="form-line" id="id_7">
+						<label class="form-label-left" id="label_7" for="input_7"> Teléfono o celular (opcional): </label>
+						<div id="cid_7" class="form-input">
+						  <input type="text" class="form-textbox validate[AlphaNumeric]" id="input_7" name="q7_telefonoO7" />
+						</div>
+					  </li>
+					  <li class="form-line" id="id_9">
+						<label class="form-label-left" id="label_9" for="input_9"> Motivo de Contacto: </label>
+						<div id="cid_9" class="form-input">
+						  <div class="form-single-column"><span class="form-radio-item"><input type="radio" class="form-radio validate[required]" id="input_9_0" name="q9_motivoDe" value="Consulta de Compra" />
+							  <label for="input_9_0"> Consulta de Compra </label></span><span class="clearfix"></span><span class="form-radio-item" ><input type="radio" class="form-radio validate[required]" id="input_9_1" name="q9_motivoDe" value="Reclamo" />
+							  <label for="input_9_1"> Reclamo </label></span><span class="clearfix"></span><span class="form-radio-item" ><input type="radio" class="form-radio validate[required]" id="input_9_2" name="q9_motivoDe" value="Información" />
+							  <label for="input_9_2"> Información </label></span><span class="clearfix"></span><span class="form-radio-item" ><input type="radio" class="form-radio validate[required]" id="input_9_3" name="q9_motivoDe" value="Otro" />
+							  <label for="input_9_3"> Otro </label></span><span class="clearfix"></span>
+						  </div>
+						</div>
+					  </li>
+					  <li class="form-line" id="id_6">
+						<label class="form-label-left" id="label_6" for="input_6"> Mensaje: </label>
+						<div id="cid_6" class="form-input">
+						  <textarea id="input_6" class="form-textarea validate[required]" name="q6_hola" ></textarea>
+						</div>
+					  </li>
+					  <li class="form-line form-line-column" id="id_2">
+						<div id="cid_2" class="form-input-wide">
+						  <div id="form-buttons-wrapper">
+							<button id="input_2" type="submit" class="form-submit-button"> Enviar </button>
+							&nbsp;
+							<button id="input_reset_2" type="reset" class="form-submit-reset"> Limpiar </button>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
 					</form>
 				</div>
 
@@ -129,8 +121,6 @@
 					<table>
 					<tr>
 					<div id="map">
-					
-					
 					
 					</div>
 					</tr>
@@ -172,7 +162,7 @@
 		</div>
 		
 		<div id="cempresa">
-			<p>BALANZAS LEVIS S.R.A</p>
+			<p>BALANZAS LEVIS S.R.L.</p>
 			<p>© Copyright 2011.</p>
 		</div>
 	</footer>
